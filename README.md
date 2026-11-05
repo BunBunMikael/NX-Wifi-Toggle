@@ -6,6 +6,8 @@
 
 ## What this does
 
+This system overlay should save you some time if you need to turn wifi on or off while playing on TV/Docked mode.
+
 The overlay calls `nifm` `SetWirelessCommunicationEnabled` (`nifm:a`) to switch wifi states. Only this call is used.
 Nothing in the code checks docked/handheld mode.
 
