@@ -4,12 +4,16 @@
 - OFF -> Wi-Fi is re-enabled
 - Bluetooth is never touched in either direction (no `btm`/`btdrv` service is opened, no `set:sys` Bluetooth flag is written).
 
-## What this does
+## What does this overlay do?
 
 This system overlay should save you some time if you need to turn wifi on or off while playing on TV/Docked mode.
 
 The overlay calls `nifm` `SetWirelessCommunicationEnabled` (`nifm:a`) to switch wifi states. Only this call is used.
 Nothing in the code checks docked/handheld mode.
+
+##Why did you make this?
+
+To save myself some time
 
 ## You can get an already built .ovl from the release tab
 
