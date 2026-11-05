@@ -9,16 +9,13 @@
 The overlay calls `nifm` `SetWirelessCommunicationEnabled` (`nifm:a`) to switch wifi states. Only this call is used.
 Nothing in the code checks docked/handheld mode.
 
-## Get a built .ovl without installing anything
-## Or build locally
+## You can get an already built .ovl from the release tab
 
-Needs devkitPro (`switch-dev`) and libtesla in this folder:
+## What you need to build it yourself
 
-    git clone https://github.com/WerWolv/libtesla libtesla
-    export DEVKITPRO=/opt/devkitpro
-    make
+DevkitPro (`switch-dev`) and libtesla
 
-## Install
+## Installation
 
 Copy `NX-Wifi-Toggle.ovl` to `sdmc:/switch/.overlays/` and open it from Ultrahand (or Tesla).
 
